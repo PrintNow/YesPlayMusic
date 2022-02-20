@@ -35,7 +35,7 @@ module.exports = {
       entry: 'src/main.js',
       template: 'public/index.html',
       filename: 'index.html',
-      title: 'YesPlayMusic',
+      title: '网易云音乐第三方客户端',
       chunks: ['main', 'chunk-vendors', 'chunk-common', 'index'],
     },
   },

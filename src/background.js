@@ -181,7 +181,7 @@ class Background {
       minHeight: 720,
       titleBarStyle: 'hiddenInset',
       frame: !isWindows,
-      title: 'YesPlayMusic',
+      title: '网易云音乐第三方客户端',
       show: false,
       webPreferences: {
         webSecurity: false,
@@ -235,7 +235,7 @@ class Background {
         .showMessageBox({
           title: '发现新版本 v' + info.version,
           message: '发现新版本 v' + info.version,
-          detail: '是否前往 GitHub 下载新版本安装包？',
+          detail: '是否前往 GitHub<非官方> 下载新版本安装包？',
           buttons: ['下载', '取消'],
           type: 'question',
           noLink: true,
@@ -243,7 +243,7 @@ class Background {
         .then(result => {
           if (result.response === 0) {
             shell.openExternal(
-              'https://github.com/qier222/YesPlayMusic/releases'
+              'https://github.com/PrintNow/YesPlayMusic/releases'
             );
           }
         });
@@ -303,7 +303,7 @@ class Background {
           width: 800,
           height: 600,
           titleBarStyle: 'default',
-          title: 'YesPlayMusic',
+          title: '网易云音乐第三方客户端',
           webPreferences: {
             webSecurity: false,
             nodeIntegration: true,
